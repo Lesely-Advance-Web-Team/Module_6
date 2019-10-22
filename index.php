@@ -1,29 +1,39 @@
 <!DOCTYPE html>
     <head>
-        <title>Welcome to Mod6 Web Class 1st CSM</title>
+        <title>Welcome to Victoria's Blog</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
         <?php include 'header.php' ?>
         <?php include 'nav.php' ?>
+   <main>
+    <ul class="blog-list">
         <?php
-            function getPostTitlesFromDatabase() {
+        function getPostTitlesFromDatabase() {
+        //Retreive posts from posts table
+        include_once 'db_connect.php';
+        $sql = "SELECT title FROM posts";
+        $results = mysqli_query($conn, $sql);
 
-                $postTitles = array("Florida", "Georgia", "New York" , "California");
-                return $postTitles;
-            }
-        ?>
-        <main>
-            <ul class="blog-list">
-                <?php 
-                    $postTitles = getPostTitlesFromDatabase();
+        //Get each result, assoc array, add title
+        $postTitles = array();
+        while($row = mysqli_fetch_assoc($results)){
+            array_push($postTitles, $row['title']);
+        }
+        return $postTitles;
+    }
+    
 
-                    foreach($postTitles as $postTitle) {
-                        echo "<li><a href='post.php?title=" . $postTitle . "'>" . $postTitle . "</a></li>";
-                    }
-                ?>
-            </ul>
+        $postTitles = getPostTitlesFromDatabase();
+
+        foreach($postTitles as $postTitle) {
+            echo "<li><a href='post.php?title=" . $postTitle . "'>" . $postTitle . "</a></li>";
+        }
+                    ?>
+                
+                </ul>
         </main>
-        <?php include 'footer.php' ?>
-    </body>
-</html>
+                <?php include 'footer.php' ?>
+
+            </body>
+        </html>        
