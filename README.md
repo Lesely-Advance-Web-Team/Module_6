@@ -10,7 +10,7 @@
 
 Be creative, but also remember that you only have a week to complete the assignment. A CMS does not have to be a blog, you could build a Recipe book CMS, or a Photo Album etc. Using PHP templating, you can take any input and generate content!
 - **What kind of CMS are you creating?**
-  - We are creating a Photo Album CMS about visited locations.
+  - We are creating a Blog CMS about visited locations.
 
 ---
 
