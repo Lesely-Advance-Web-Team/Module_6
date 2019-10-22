@@ -39,7 +39,7 @@ Be creative, but also remember that you only have a week to complete the assignm
 
 **You must design a Database:**
 - **What tables will you have in your database?**
-  - ID, Image, Title, Author, Location, Date, Description
+  - ID, Title, Author, Location, Date, Description
 - **What kind of CRUD operations will you perform to manipulate the data?**
   - Some CRUD operations that we’d perform to manipulate the data was
   - ![alt text](https://drive.google.com/file/d/1tEQAb-81BYi3t5c6syW6CGJhSwSqKqoz/view?usp=sharing "Created Database Command")
