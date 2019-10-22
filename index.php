@@ -1,39 +1,17 @@
-<!DOCTYPE html>
-    <head>
-        <title>Welcome to Victoria's Blog</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <?php include 'header.php' ?>
-        <?php include 'nav.php' ?>
-   <main>
-    <ul class="blog-list">
-        <?php
-        function getPostTitlesFromDatabase() {
-        //Retreive posts from posts table
-        include_once 'db_connect.php';
-        $sql = "SELECT title FROM posts";
-        $results = mysqli_query($conn, $sql);
+<?php
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-        //Get each result, assoc array, add title
-        $postTitles = array();
-        while($row = mysqli_fetch_assoc($results)){
-            array_push($postTitles, $row['title']);
-        }
-        return $postTitles;
-    }
-    
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define( 'WP_USE_THEMES', true );
 
-        $postTitles = getPostTitlesFromDatabase();
-
-        foreach($postTitles as $postTitle) {
-            echo "<li><a href='post.php?title=" . $postTitle . "'>" . $postTitle . "</a></li>";
-        }
-                    ?>
-                
-                </ul>
-        </main>
-                <?php include 'footer.php' ?>
-
-            </body>
-        </html>        
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );
