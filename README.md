@@ -41,7 +41,9 @@ Be creative, but also remember that you only have a week to complete the assignm
 - **What tables will you have in your database?**
   - ID, Image, Title, Author, Location, Date, Description
 - **What kind of CRUD operations will you perform to manipulate the data?**
-  - Some CRUD operations that we’d perform to manipulate the data are…
+  - Some CRUD operations that we’d perform to manipulate the data was
+  - ![alt text](https://drive.google.com/file/d/1tEQAb-81BYi3t5c6syW6CGJhSwSqKqoz/view?usp=sharing "Created Database Command")
+  - `CREATE DATABASE mod6_blog_cms`
 - **What role does Security play in your Blog CMS? Why is it important to protect this database?**
   - Security is a must have and the we have placed security in our Blog CMS by… It is important to protect this database because…
 ---
