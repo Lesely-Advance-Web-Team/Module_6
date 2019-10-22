@@ -29,9 +29,11 @@ Be creative, but also remember that you only have a week to complete the assignm
 - **How will you keep your code DRY?**
     - We the format of our code includes several practices of the DRY method. We used PHP and this helped manage and simplify our code. If there were areas that we thought would repeat itself we created another document to put that function in, to be called upon in other files. We used it for our header, nav, and footer by doing the following in the page:
     
-`<?php include 'header.php' ?>`
-`<?php include 'nav.php' ?>`
-`<?php include 'footer.php' ?>`
+    `<?php include 'header.php' ?>`
+    
+    `<?php include 'nav.php' ?>`
+    
+    `<?php include 'footer.php' ?>`
 
 --- 
 
@@ -57,5 +59,4 @@ Be creative, but also remember that you only have a week to complete the assignm
 - Create a Github organization for your team
   - Create a team repo owned by the organization
   - Use GIT fork, pull requests, merge workflow
-  - Write your response in Markdown format
-  - (Optional) Use Github Projects to track your work
+  - *Write your response in Markdown format*
