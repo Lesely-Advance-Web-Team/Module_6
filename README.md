@@ -58,7 +58,7 @@ Be creative, but also remember that you only have a week to complete the assignm
 
 - **What kind of CRUD operations will you perform to manipulate the data?**
   - Some CRUD operations that we’d perform to manipulate the data was
-  - `CREATE DATABASE mod6_blog_cms`
+  - `CREATE DATABASE mod6_blog_cms` 
     - View screenshot of above: https://drive.google.com/file/d/1tEQAb-81BYi3t5c6syW6CGJhSwSqKqoz/view?usp=sharing
   - `INSERT INTO `posts` (`ID`, `Title`, `Author`, `Location`, `Date`, `Description`) VALUES (NULL, 'Fun Times in Miami!', 'Victoria BM', 'Florida, Miami', '2019-10-01', 'We had so much fun in Miami! We went to south beach and meet Tom Cruz and drank lattes. The Best!');`
   
