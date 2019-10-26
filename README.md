@@ -17,6 +17,8 @@ Be creative, but also remember that you only have a week to complete the assignm
 **You must describe the Server-side code:**
 - **What will your server-side code look like?**
   - The server-side codes looks like… 
+  - Inline-style: 
+![alt text](https://designmanagementlucerne.files.wordpress.com/2015/11/client-server-side.png?w=552&h=285 "Server-side Code vs Client-side Code")
 - **What files and functions will you have?**
   - Some files and functions that would be included would be the following:
     - Images – to store images included in the CMS.
