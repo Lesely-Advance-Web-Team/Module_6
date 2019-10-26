@@ -17,8 +17,21 @@ Be creative, but also remember that you only have a week to complete the assignm
 **You must describe the Server-side code:**
 - **What will your server-side code look like?**
   - The server-side codes looks like… 
-  - Inline-style: 
-![alt text](https://designmanagementlucerne.files.wordpress.com/2015/11/client-server-side.png?w=552&h=285 "Server-side Code vs Client-side Code")
+    - This diagram represents server-side and client side-code 
+    ![alt text](https://designmanagementlucerne.files.wordpress.com/2015/11/client-server-side.png?w=552&h=285 "Server-side Code vs Client-side Code")
+    - Server-side code is going to run on Apache server via WAMP and will have php DRY code. It will start off by looking like this:
+    - ```php
+    - <!DOCTYPE html>
+    <head>
+        <title>Welcome to Victoria's Blog</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <?php include 'header.php' ?>
+        <?php include 'nav.php' ?>
+        <?php
+            function getPostTitlesFromDatabase() {>
+```
 - **What files and functions will you have?**
   - Some files and functions that would be included would be the following:
     - Images – to store images included in the CMS.
@@ -28,6 +41,7 @@ Be creative, but also remember that you only have a week to complete the assignm
     - Nav – To store the menu titles, links, and format.
     - Post – For each post to so there is a link for each one.
     - Post-Submission – The area in where visitors’ cans submit a post to the blog. This information will get sent to the server and stored in the database for it to be displayed in the site.
+  
 - **How will you keep your code DRY?**
     - We the format of our code includes several practices of the DRY method. We used PHP and this helped manage and simplify our code. If there were areas that we thought would repeat itself we created another document to put that function in, to be called upon in other files. We used it for our header, nav, and footer by doing the following in the page:
     
