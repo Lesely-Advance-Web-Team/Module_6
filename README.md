@@ -79,4 +79,5 @@ Be creative, but also remember that you only have a week to complete the assignm
 - Create a Github organization for your team ( We did this by doing the following below)
   - Create a team repo owned by the organization
   - Use GIT fork, pull requests, merge workflow
+    - View screenshot of above: https://drive.google.com/file/d/1kqnxDxT42SPhn-AYarn9aVjf4kedUd7L/view?usp=sharing
   - *Write your response in Markdown format*
