@@ -47,14 +47,14 @@ Be creative, but also remember that you only have a week to complete the assignm
   - Our table "post" will have the following feilds: ID, Title, Author, Location, Date, Content. ID was set to AI & Primary.
 
 
-| # | Name     |   Type   |
-| - |:--------:| --------:|
-| 1 | ID       | int(11)  |
-| 2 | Title    |   text   |
-| 3 | Author   |   text   |
-| 4 | Location |   text   |
-| 5 | Date     |   date   |
-| 6 | Content  | longtext |
+| # | Name         |   Type   |
+| - |:------------:| --------:|
+| 1 | ID           | int(11)  |
+| 2 | Title        |   text   |
+| 3 | Author       |   text   |
+| 4 | Location     |   text   |
+| 5 | Date         |   date   |
+| 6 | Description  | longtext |
 
 - **What kind of CRUD operations will you perform to manipulate the data?**
   - Some CRUD operations that we’d perform to manipulate the data was
@@ -72,7 +72,7 @@ Be creative, but also remember that you only have a week to complete the assignm
 - **What kinds of functionality would it be better to do on the client side rather than on the server?**
   - Functionalities that would be better to do on the client side rather than on the server, would be simple interactions such as allowing the user to sort their table or put filters on their images they plan to upload. These actoins will be much faster on the client-side.
 - **What kind of POST requests would you have in your Blog CMS?**
-  - The types of POST requests that is inserted into our Blog CMS would allow users to share their location experiences when they travel. They would share post that has a title, their alias (<i>so we know who it is from</i>). They’d also share the location, date, and a brief description of their experience.
+  - The types of POST requests that is inserted into our Blog CMS would allow users to share their location experiences when they travel. They would share post that has a title, their alias (*so we know who it is from*). They’d also share the location, date, and a brief description of their experience.
 ---
 
 **You must use Github workflow:**
@@ -81,3 +81,4 @@ Be creative, but also remember that you only have a week to complete the assignm
   - Use GIT fork, pull requests, merge workflow
     - View screenshot of above: https://drive.google.com/file/d/1kqnxDxT42SPhn-AYarn9aVjf4kedUd7L/view?usp=sharing
   - *Write your response in Markdown format*
+    - *CodeTroubles: pulling corresponding post details to title and posting to database*
